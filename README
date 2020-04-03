@@ -1,0 +1,60 @@
+-----------------------------------------------------------------
+Copyright (c) 1989 Lars Fredriksen, Bryan So, Barton Miller
+All rights reserved
+    
+This software is furnished under the condition that it may not
+be provided or otherwise made available to, or used by, any
+other person.  No title to or ownership of the software is
+hereby transferred.
+  
+Any use of this software must include the above copyright notice.
+-----------------------------------------------------------------
+
+
+	Instructions for how to use the scripts in this directory:
+
+
+Testing:
+
+	If only some of the programs need to be tested, use run.select as
+	follows:
+
+		run.select program1 program2 ...
+
+	"Run" will execute run.stdin, run.file, run.cp or run.pty depending on
+	the definition in run.master.  These are discussed below.
+
+
+Adding programs to these test cases:
+
+	To do this you have to edit the run.master script file. 
+	
+	First find out how the program reads its input. 
+	
+     -	If it reads input from stdin, put the following line in the run.master 
+	file:
+	
+		run.stdin programname [parameters]
+
+
+     -	If the program takes its input from a file, put the following line in 
+	the run.master file:
+
+		run.file programname [parameters]
+
+        A test file will then be supplied as the last argument.
+	For program like diff, that compares files, one of the test files are
+	also given as a parameter to the program.
+
+
+     -	If the program only takes its input from a file with a special name 
+	put the following line in the run.master file:
+
+		run.cp [-] filename programname [parameters]
+
+        This will cause the script to copy a test file to filename before
+	executing the program. The filename will be given as the last
+	parameter unless a '-' is given.
+
+
+	"Run.master" contains lots of examples.

@@ -1,0 +1,81 @@
+run.stdin ./bin/as
+run.stdin ./bin/bc
+run.stdin ./bin/bibtex
+run.stdin ./bin/cat
+run.stdin ./bin/col
+run.stdin ./bin/colcrt
+run.stdin ./bin/colrm
+run.stdin ./bin/cpp
+run.stdin ./bin/gdb
+run.stdin ./bin/dc
+run.stdin ./bin/neqn
+run.stdin ./bin/diction
+run.stdin ./bin/groff
+run.stdin ./bin/gtbl
+run.stdin ./bin/eqn
+run.stdin ./bin/expand
+run.stdin ./bin/fmt
+run.stdin ./bin/fold
+run.stdin ./bin/ftp
+run.stdin ./bin/graph
+run.stdin ./bin/grep a
+run.stdin ./bin/grn
+run.stdin ./bin/head
+run.stdin ./bin/indent -st
+run.stdin ./bin/latex
+run.stdin ./bin/lex
+run.stdin ./bin/clisp
+run.stdin ./bin/m4
+run.stdin ./bin/less
+run.stdin ./bin/nroff
+run.stdin ./bin/pic
+run.stdin ./bin/plot
+run.stdin ./bin/pr
+run.stdin ./bin/prolog
+run.stdin ./bin/ptx
+run.stdin ./bin/refer
+run.stdin ./bin/rev
+run.stdin ./bin/sed s/a/b/g
+run.stdin ./bin/sh
+run.stdin ./bin/soelim
+run.stdin ./bin/sort
+run.stdin ./bin/spell
+run.stdin ./bin/spline
+run.stdin ./bin/sql
+run.stdin ./bin/strings
+run.stdin ./bin/style
+run.stdin ./bin/sum
+run.stdin ./bin/tail
+run.stdin ./bin/tbl
+run.stdin ./bin/tee /tmp/tee.tmp
+run.stdin ./bin/telnet
+run.stdin ./bin/tex
+run.stdin ./bin/tr a b
+run.stdin ./bin/troff -t
+run.stdin ./bin/tsort
+run.stdin ./bin/ul
+run.stdin ./bin/uniq
+run.stdin ./bin/units
+run.stdin ./bin/wc
+run.file ./bin/gawk
+run.file ./bin/comm t12
+run.file ./bin/diff t12
+run.file ./bin/join t12
+run.file ./bin/look a
+run.file ./bin/make -f
+run.file ./bin/nm
+run.file ./bin/strip
+run.file ./bin/yacc
+run.cp - ./bin/calendar calendar
+run.cp t.c ./bin/gcc
+run.cp t ./bin/gzip
+run.cp t.f ./bin/fort77
+run.cp t.c ./bin/splint
+run.cp t.p ./bin/pc
+run.cp t ./bin/split -10
+run.cp t.c ./bin/ctags
+run.stdin ./bin/ex
+run.stdin ./bin/ed
+run.stdin ./bin/csh
+run.stdin ./bin/xargs test
+run.stdin ./fuzz
